@@ -1,0 +1,14 @@
+footer {
+    padding: 100px 0;
+    background-color: #cbcbcb;
+    bottom: 0;
+    width: 100%;
+}
+
+footer.fixed {
+    position: fixed;
+}
+
+footer.smaller {
+    padding: 10px 0;
+}

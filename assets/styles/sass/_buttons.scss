@@ -1,0 +1,29 @@
+/* Custom Button Styles */
+
+.btn-dark {
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.btn-light {
+    color: #333;
+    border: none;
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255, 255, 255, .8);
+}

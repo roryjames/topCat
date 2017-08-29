@@ -1,0 +1,30 @@
+{
+  "name": "topCat",
+  "version": "1.0.0",
+  "description": "Rate Your Favorite Cat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rorytothemax/topCat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rorytothemax/topCat/issues"
+  },
+  "homepage": "https://github.com/rorytothemax/topCat#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "mysql2": "^1.4.2",
+    "node-sass": "^4.5.3",
+    "path": "^0.12.7",
+    "sequelize": "^4.7.5"
+  }
+}
