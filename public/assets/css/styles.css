@@ -221,6 +221,9 @@ footer.smaller {
   width: 75px;
   height: 75px; }
 
+.icons a {
+  display: block; }
+
 @media screen and (max-width: 374px) {
   #well-section {
     height: 50%; } }
