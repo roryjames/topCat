@@ -43,7 +43,8 @@ hr.small {
   padding: 5px; }
 
 #well-section {
-  height: 50%; }
+  height: 50%;
+  text-align: center; }
 
 /* Custom Button Styles */
 .btn-dark {
@@ -168,7 +169,8 @@ img.cat {
   width: 90%;
   margin: 20px;
   border-radius: 10px;
-  border: 2px #cdcdcd; }
+  border: 2px #cdcdcd;
+  box-shadow: 1px 1px 20px #888888; }
 
 .well {
   padding: 0;
@@ -233,3 +235,7 @@ footer.smaller {
 @media screen and (max-width: 374px) {
   #well-section {
     height: 50%; } }
+
+@media screen and (min-width: 1024px) {
+  img.cat {
+    width: 40%; } }

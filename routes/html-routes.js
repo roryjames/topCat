@@ -9,4 +9,8 @@ module.exports = function(app) {
     app.get('/cats', function(req, res) {
         res.sendFile(path.join(__dirname, '../views/cats.html'));
     })
+
+    app.get('/topcat', function(req, res) {
+        res.sendFile(path.join(__dirname, '../views/topcat.html'));
+    })
 };

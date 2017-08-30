@@ -14,3 +14,9 @@
     });
 
 })(jQuery); // End of use strict
+
+$(".xo").on('click', function() {
+    $(".xo").animate({
+        opacity: '0.5'
+    });
+});
