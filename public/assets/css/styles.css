@@ -43,7 +43,7 @@ hr.small {
   padding: 5px; }
 
 #well-section {
-  height: 60%; }
+  height: 50%; }
 
 /* Custom Button Styles */
 .btn-dark {
@@ -163,6 +163,12 @@ header.list.header {
   vertical-align: middle;
   font-size: 2.5em;
   text-align: center; }
+
+img.cat {
+  width: 90%;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px #cdcdcd; }
 
 .well {
   padding: 0;
