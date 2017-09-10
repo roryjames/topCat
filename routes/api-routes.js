@@ -10,4 +10,28 @@ module.exports = function(app) {
         });
     });
 
+    //update votes 
+    app.put("/api/cat", function(req, res) {
+        db.Cats.update({
+          votes: req.body.votes+1
+        }, {
+          where: {
+            id: req.body.id
+          }
+        }).then(function(dbCats) {
+          res.json(dbCats);
+        });
+      });
+    
+    //get highest votes
+    app.get("/api/topcat/:id", function(req, res) {
+        db.Cats.findOne({
+          where: {
+              id: req.params.id
+          }
+        }).then(function(dbCats) {
+            res.json(dbCats);
+        });
+    });
+
 };
