@@ -1,6 +1,6 @@
 
 var topCat;
-
+//require does not work here
 // var data = require("./models/catModel.js");
 $(document).ready(function() {
     // event.preventDefault();
@@ -10,12 +10,8 @@ $.get('/api/cat/', function(data) {
     console.log(data);
     //select a random cat to display on html
     // var randomNum = Math.floor(Math.random() * (30 - 1) + 1);
-    // var numbers = [1, 2, 3, 4];
-    // Math.max.apply(null, numbers)
 
-    // var arr = $.parseJSON(data);
-    // arr = $.map(arr, function(o){ return o.y; });
-    
+    //find the id with the most "votes"
     for(var i=0; i<data.length; i++){
         if(data[i].votes === Math.max.apply(null, data.votes)){
             topCat = data[i].id;
@@ -23,8 +19,7 @@ $.get('/api/cat/', function(data) {
         }
         return topCat;
     }
-    // likedCat = data[3].id;
-    
+    //display votes with picture
     console.log(topCat);
     var liked = $("<h2>");
     liked.text(topCat.votes);
@@ -33,13 +28,6 @@ $.get('/api/cat/', function(data) {
 });
 
 });
-
-    
-
-
-
-
-
 
 $("#like").on('click', function() {
     $(".xo").animate({

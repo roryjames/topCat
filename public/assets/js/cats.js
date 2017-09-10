@@ -1,8 +1,8 @@
 
 var chosenCat;
-//only work o back end!!
-// var Cats = require("../models/catModel.js");
+//only work at back end!!
 // var db = require("./models/catModel.js");
+
 //pull all json data
 $.get('/api/cat/', function(data) {
     console.log(data);
