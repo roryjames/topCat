@@ -1,6 +1,5 @@
 
 var chosenCat;
-//only work at back end!!
 // var db = require("./models/catModel.js");
 
 //pull all json data
@@ -17,7 +16,6 @@ $.get('/api/cat/', function(data) {
 });
 
 // $(document).ready(function() {
-//post like to votes++ of cat id
 $("#like").on('click', function() {
     $(".xo").animate({
         left: '250px',
@@ -27,8 +25,9 @@ $("#like").on('click', function() {
     }, 1000);
 }, 2000);
 
+//update votes of liked cat by id
 $("#like").on('click', function() {
-    $.post('/api/cat/', function(data) {
+    $.put('/api/cat/', function(data) {
         //assign var chosenCat to chosen id
         data[randomNum].id = chosenCat;
         Cats.update(votes++, {
