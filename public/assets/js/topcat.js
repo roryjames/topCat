@@ -14,7 +14,7 @@ $.get('/api/cat/', function(data) {
     //find the id with the most "votes"
     for(var i=0; i<data.length; i++){
         if(data[i].votes === Math.max.apply(null, data.votes)){
-            topCat = data[i].id;
+            topCat = data[i];
             $('#well-section').append('<img class="cat" src=' + data[i].picture + '>');
         }
         return topCat;
